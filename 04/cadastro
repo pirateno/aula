@@ -1,0 +1,41 @@
+<form action="http://191.252.62.149:8080/pwerb/salvar.jsp" method="POST">
+
+    Login*: <br>
+    <input type="text" required name ="login"><br>
+
+    Senha : <br>
+    <input type="password" name="senha"><br>
+    Confirmar senha : <br>
+    <input type="password" name="confirmarsenha"><br>
+
+    Nome : <br>
+    <input type="text" name="nome"><br>
+
+    Sexo : <br>
+    <input type="radio" value="Masculino" name="sexo">Masculino<br>
+    <input type="radio" value="Feminino" name="sexo">Feminino<br>
+
+    Email : <br>
+    <input type="Email" name="email"><br><br>
+    
+<label for="estado">Escolha o Estado:</label>
+    <select id="estado" name="estado">
+      <option value="AC">Acre</option>
+      <option value="AL">Alagoas</option>
+      <option value="AP">Amapá</option>
+        <option value="PI">Piauí</option>
+    </select>
+    <br><br>
+    <label for="observacoes">Observações:</label>
+    <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea>
+    <br><br>
+
+    Interesses : <br>
+    <input type="checkbox" value="Futebol" name="Interesses">Futebol<br>
+    <input type="checkbox" value="Política" name="Interesses">Política<br>
+    <input type="checkbox" value="Economia" name="Interesses">Economia<br>
+    <input type="checkbox" value="Carros" name="Interesses">Carros<br>
+    <input type="checkbox" value="Celebridades" name="Celebridades">Celebridades<br><br>
+
+    <input type="button" value="Enviar">
+</form>

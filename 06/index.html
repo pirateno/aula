@@ -1,32 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 07</title>
+    <title>Minha Página Web com div e span</title>
     <style>
-        .destaque {
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .main-content {
+            float: left;
+            width: 70%;
+            padding: 20px;
+        }
+        .sidebar {
+            float: left;
+            width: 30%;
+            padding: 20px;
+            background-color: #ddd;
+        }
+        .footer {
+            clear: both;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .highlight {
             color: red;
             font-weight: bold;
-        }
-        .copy {
-            font-style: italic;
-            font-weight: bold;
-        }
-        footer {
-            border-style: solid;
-            border-width: 5px 10px 5px 5px;
-            border-color: red green gray blue;
-            padding: 10px;
-            text-align: center;
-            background-color: #f4f4f4; /* Cor de fundo leve para o rodapé */
         }
     </style>
 </head>
 <body>
-    <p>Este é um <span class="destaque">exemplo</span> de uso da tag span</p>
-    <footer>
-        <span class="copy">Copyright &copy;</span> Todos os direitos reservados
-    </footer>
+    <div class="header">
+        <h1>Minha Página Web com div e span</h1>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <h2>Conteúdo Principal</h2>
+            <p>Este é o conteúdo principal da página. Aqui você pode adicionar textos, imagens, vídeos, etc.</p>
+            <p>Mais conteúdo de exemplo no parágrafo principal. Aqui está um <span class="highlight">texto destacado</span> usando a tag <span>.</p>
+        </div>
+        <div class="sidebar">
+            <h2>Barra Lateral</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Rodapé da Página. &copy; <span class="copy">2024</span></p>
+    </div>
 </body>
 </html>

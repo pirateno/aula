@@ -1,73 +1,72 @@
+
 <!DOCTYPE html>
 <html>
 
-     <head>
-         <title>Box model</title>
-         <meta charset="utf-8" />
+<head>
+    <title>Box Model</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        body {
+            background: #61bd8c;
+        }
 
-         <style type="text/css">
+        #conteudo {
+            background: #FFFFFF;
+            padding: 10px;
+            width: 900px;
+            margin: 30px auto;
+            border: 2px solid #333;
+            position: relative;
+        }
 
-            body {
-                background: #61bd8c;
-            }
-           
-            #conteudo{
-                background: #FFFFFF ;
-                padding: 10px;
-                width: 900px;
-                margin: 30px auto;
-                border: 2px solid #333;
-                position: relative;
-            }
-            .caixa{
-                background: red;
-                margin: 10px;
-                width: 100px;
-                height: 100px;
-                color: #FFFFFF;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+        .caixa {
+            background: red;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-            #relativo{
-                position: relative;
-                left: 30px;
-            }
+        #relativo {
+            position: relative;
+            left: 30px;
+        }
 
-            #absoluto{
-                position: absolute;
-                left: 30px;
-            }
+        #absoluto {
+            position: absolute;
+            left: 30px;
+        }
 
-            #fixo{
-                position: fixed;
-                left: 200px;
-                top: 0px;
+        #fixo {
+            position: fixed;
+            left: 200px;
+            top: 0px;
+        }
+    </style>
+</head>
 
-            }
-         </style>
-     </head>
+<body>
+    <span>Container body</span>
 
-     <body>
-        <span> container body</span>
-
-        <div id=conteudo>
-            container div
+    <div id="conteudo">
+        Container div
 
         <div id="relativo" class="caixa">
-            relativo
+            Relativo
         </div>
 
         <div id="absoluto" class="caixa">
-            absoluto
+            Absoluto
         </div>
 
-        <div id="Fixo" class="caixa">
+        <div id="fixo" class="caixa">
             Fixo
         </div>
 
     </div>
-     </body>
+</body>
 
 </html>

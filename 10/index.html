@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo CSS3</title>
+    <style>
+        /* Normaliza o box-sizing para todos os elementos */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Estilização da classe .box */
+        .box {
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid #333;
+            border-radius: 15px; /* Aqui, aplicamos o border-radius */
+        }
+
+        /* Estilização para o fieldset */
+        fieldset {
+            border: 2px solid #008CBA;
+            padding: 10px;
+            border-radius: 10px; /* Adiciona cantos arredondados ao fieldset */
+        }
+
+        /* Estilização para o legend */
+        legend {
+            font-weight: bold;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </fieldset>
+    </div>
+</body>
+</html>

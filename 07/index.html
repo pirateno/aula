@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Atividade 07</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 07 - Famílias de Fontes</title>
     <style>
-        .destaque {
-            color: red;
-            font-weight: bold;
+        .serif {
+            font-family: 'Times New Roman', Times, serif;
         }
-        .copy {
-            font-style: italic;
-            font-weight: bold;
+
+        .sans-serif {
+            font-family: Arial, Helvetica, sans-serif;
         }
-        div {
-            border-style: solid;
-            border-width: 5px 10px 5px 5px;
-            border-color: red green gray blue;
+
+        .monospace {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .cursive {
+            font-family: 'Brush Script MT', cursive;
+        }
+
+        .fantasy {
+            font-family: 'Impact', fantasy;
         }
     </style>
 </head>
 <body>
-    <p>Este é um <span class="destaque">exemplo</span> de uso da tag span</p>
-    <div id="rodape">
-        <span class="copy">Copyright &copy;</span> Todos os direitos reservados
-    </div>
+    <h1>Exemplos de Famílias de Fontes</h1>
+
+    <p class="serif">Esta é uma frase com uma fonte serifada.</p>
+    <p class="sans-serif">Esta é uma frase com uma fonte sem serifa (sans-serif).</p>
+    <p class="monospace">Esta é uma frase com uma fonte monoespaçada.</p>
+    <p class="cursive">Esta é uma frase com uma fonte cursiva.</p>
+    <p class="fantasy">Esta é uma frase com uma fonte de fantasia.</p>
 </body>
 </html>

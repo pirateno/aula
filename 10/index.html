@@ -3,47 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo CSS3</title>
+    <title>Exercício CSS - Círculos</title>
     <style>
-    
-        * {
-            box-sizing: border-box;
+        /* Estilos básicos para alinhar os círculos */
+        .container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
-
-        .box {
-            backgrpound: #b9c941;
-            padding: 10px;
-            margin: 10px;
-            height: 140px;
-            width: 300px;
-            border-radius: 20px; 
+        /* Estilo geral para os círculos */
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
         }
 
-        
-        fieldset {
-            border: 2px solid #008CBA;
-            padding: 10px;
-            border-radius: 10px; 
+        /* Seções do círculo */
+        .circle .quarter {
+            width: 50%;
+            height: 50%;
+            position: absolute;
         }
 
-    
-        legend {
-            font-weight: bold;
-            padding: 5px;
+        .top-left {
+            top: 0;
+            left: 0;
+            background-color: red;
+        }
+
+        .top-right {
+            top: 0;
+            right: 0;
+            background-color: orange;
+        }
+
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+            background-color: green;
+        }
+
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+            background-color: purple;
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        <fieldset>
-            <legend>Informações Pessoais</legend>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome">
-            <br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-        </fieldset>
+    <div class="container">
+        <!-- Primeiro círculo -->
+        <div class="circle">
+            <div class="quarter top-left"></div>
+            <div class="quarter top-right"></div>
+            <div class="quarter bottom-left"></div>
+            <div class="quarter bottom-right"></div>
+        </div>
+        
+        <!-- Segundo círculo -->
+        <div class="circle">
+            <div class="quarter top-left"></div>
+            <div class="quarter top-right"></div>
+            <div class="quarter bottom-left"></div>
+            <div class="quarter bottom-right"></div>
+        </div>
+        
+        <!-- Terceiro círculo -->
+        <div class="circle">
+            <div class="quarter top-left"></div>
+            <div class="quarter top-right"></div>
+            <div class="quarter bottom-left"></div>
+            <div class="quarter bottom-right"></div>
+        </div>
     </div>
 </body>
 </html>

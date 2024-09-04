@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício CSS - Flor e Círculos</title>
+    <title>Exercício CSS - Flor</title>
     <style>
-        /* Estilos básicos para alinhar os elementos */
-        .container {
+        /* Container centralizado */
+        .flower-container {
             display: flex;
-            gap: 20px;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            flex-wrap: wrap;
+            position: relative;
         }
 
         /* Estilo geral para os círculos */
@@ -20,104 +19,57 @@
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* Seções do círculo */
-        .circle .quarter {
-            width: 50%;
-            height: 50%;
             position: absolute;
         }
 
-        .top-left {
+        /* Círculo central */
+        .center {
+            background-color: yellow;
+            z-index: 1;
+        }
+
+        /* Pétalas ao redor */
+        .circle1 {
             top: 0;
-            left: 0;
+            left: 50px;
             background-color: red;
         }
 
-        .top-right {
-            top: 0;
-            right: 0;
-            background-color: orange;
-        }
-
-        .bottom-left {
-            bottom: 0;
+        .circle2 {
+            top: 50px;
             left: 0;
             background-color: green;
         }
 
-        .bottom-right {
-            bottom: 0;
-            right: 0;
+        .circle3 {
+            top: 50px;
+            left: 100px;
             background-color: purple;
         }
 
-        /* Estilo para os círculos da flor */
-        .flower {
-            position: relative;
-            width: 240px;
-            height: 240px;
-        }
-
-        .flower .petal {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-        }
-
-        .red {
-            background-color: red;
-            top: 0;
-            left: 70px;
-            border-radius: 50px;
-        }
-
-        .orange {
+        .circle4 {
+            top: 100px;
+            left: 50px;
             background-color: orange;
-            right: 0;
-            top: 70px;
-             border-radius: 50px;
-        }
-
-        .green {
-            background-color: green;
-            bottom: 0;
-            left: 70px;
-             border-radius: 50px;
-        }
-
-        .purple {
-            background-color: purple;
-            left: 0;
-            top: 70px;
-             border-radius: 50px;
-        }
-
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Flor -->
-        <div class="flower">
-            <div class="petal red"></div>
-            <div class="petal orange"></div>
-            <div class="petal green"></div>
-            <div class="petal purple"></div>
-        </div>
+    <div class="flower-container">
+        <!-- Círculo superior esquerdo -->
+        <div class="circle circle1"></div>
 
-        <!-- Círculos divididos -->
-        <div class="circle">
-            <div class="quarter top-left"></div>
-            <div class="quarter top-right"></div>
-            <div class="quarter bottom-left"></div>
-            <div class="quarter bottom-right"></div>
-        </div>
+        <!-- Círculo inferior esquerdo -->
+        <div class="circle circle2"></div>
 
+        <!-- Círculo superior direito -->
+        <div class="circle circle3"></div>
+
+        <!-- Círculo inferior direito -->
+        <div class="circle circle4"></div>
+
+        <!-- Círculo central -->
+        <div class="circle center"></div>
     </div>
 </body>
 </html>

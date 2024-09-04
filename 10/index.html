@@ -53,10 +53,57 @@
             right: 0;
             background-color: purple;
         }
+        .flower {
+            position:absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .flower .petal{
+            position:absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .red{
+            background-color: red;
+            top:0;
+            left: 70px;
+        }
+        .orange{
+            background-color:orange;
+            right:0;
+            top: 70px;
+        }
+        .green{
+            background-color: green;
+            bottom:0;
+            left:70px;
+        }
+        .purple{
+            background-color:purple;
+            left: 0;
+            top: 70px;
+        }
+        .center{
+            background-color:yellow;
+            top:70px;
+            left:70px;
+            z-index:1;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="flower">
+        <div class="petal red"></div>
+        <div class="petal orange"></div>
+        <div class="petal green"></div>
+        <div class="petal purple"></div>
+        <div class="petal center"></div>
+   </div>
         <!-- Primeiro círculo -->
         <div class="circle">
             <div class="quarter top-left"></div>
@@ -64,36 +111,6 @@
             <div class="quarter bottom-left"></div>
             <div class="quarter bottom-right"></div>
         </div>
-        
-        <!-- Segundo círculo -->
-        <div class="circle">
-            <div class="quarter top-left"></div>
-            <div class="quarter top-right"></div>
-            <div class="quarter bottom-left"></div>
-            <div class="quarter bottom-right"></div>
-        </div>
-        
-        <!-- Terceiro círculo -->
-        <div class="circle">
-            <div class="quarter top-left"></div>
-            <div class="quarter top-right"></div>
-            <div class="quarter bottom-left"></div>
-            <div class="quarter bottom-right"></div>
-        </div>
-
-      <div class="flower">
-          elemento {
-                 border-radius: 180px; 180px; 0px; 180px;
-          }
-         elemento { 
-                 border-radius: 180px; 180px; 180px; 0px;
-          }
-        elemento {
-                 border-radius: 180px; 0px; 180px; 180px;
-          }
-        elemento {
-                 border-radius: 0px; 180px; 180px; 180px;
-          }
     </div>
 </body>
 </html>
